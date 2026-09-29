@@ -16,3 +16,6 @@ The goal of this lab was to simulate a small office IT infrastructure from scrat
 - **Domain Controller (DC-01):** Windows Server 2022 Standard (`10.0.2.10/24`)
 - **Client Workstation (WIN10-CLI):** Windows 11 Enterprise (DHCP / Static `10.0.2.50/24`)
 - **Domain Name:** `lab.local`
+
+![Network Topology](diagrams/network-diagram.drawio.svg)
+
