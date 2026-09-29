@@ -19,3 +19,23 @@ The goal of this lab was to simulate a small office IT infrastructure from scrat
 
 ![Network Topology](diagrams/network-diagram.drawio.svg)
 
+---
+
+## Core Skills & Concepts Demonstrated
+
+- **Active Directory Domain Services (AD DS):** Forest deployment, domain promotion, and object hierarchy design.
+- **Identity & Access Management (IAM):** OU structuring (`IT`, `Sales`, `HR`), security group creation (`SG_Sales`, `SG_HR`), and user provisioning.
+- **Group Policy Management (GPO):** Enforcing domain password rules, automated drive mapping via GPO preferences, and Administrative Template restrictions.
+- **Network Infrastructure Services:** Static IP assignment, DNS forwarding, DHCP scope creation, and subnet isolation.
+- **Storage & Security:** SMB share deployment (`Sales_Data`), Share permissions vs. NTFS security ACL configuration.
+- **Helpdesk Operations:** User password resets, account lockout enforcement, and unlock procedures.
+
+---
+
+## Key Deployments & Configurations
+
+### 1. Active Directory OU & Security Group Structure
+Created a structured directory tree under `company_OUs` to segregate departments and apply targeted GPOs.
+- **OUs:** `IT_OU`, `Sales_OU`, `HR_OU`
+- **Security Groups:** `SG_IT`, `SG_Sales`, `SG_HR`
+- **Users:** Provisioned test domain accounts (e.g., `jdoe`, `aaron`).
