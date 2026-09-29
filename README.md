@@ -65,7 +65,7 @@ Configured SMB folder sharing for department data access control:
 
 ### Feature Test 1: GPO Enforcement & Drive Mapping
 Logged into `WIN10-CLI` as domain user `LAB\aaron`:
-1. **Drive Mapping:** Network drive `S:` automatically mounted in File Explorer pointing to `\\DC-01\Sales_Data`.
+1. **Drive Mapping:** Network drive `S:` automatically mounted in File Explorer pointing to `\\DC-01\Sales_Data$`.
 2. **Control Panel Restriction:** Attempted opening Control Panel via `Win + R` -> `control`. Access was successfully blocked by Group Policy.
 
 ![Control Panel GPO](screenshots/Control_Panel_GPO.png)
