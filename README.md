@@ -89,7 +89,7 @@ Logged into `WIN10-CLI` as domain user `LAB\aaron`:
 
 | Account Locked Error | Admin Unlock on DC-01 |
 | :---: | :---: |
-| ![Account Locked](screenshots/account_lockout_Error.png) | ![Account Unlock](screenshots/Account-Unlock.png) |
+| ![Account Locked](screenshots/Account_Lockout_Error.png) | ![Account Unlock](screenshots/Account_Unlock.png) |
 
 ---
 
