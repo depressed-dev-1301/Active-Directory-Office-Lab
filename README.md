@@ -49,3 +49,18 @@ Created a structured directory tree under `company_OUs` to segregate departments
 - **OUs:** `IT_OU`, `Sales_OU`, `HR_OU`
 - **Security Groups:** `SG_IT`, `SG_Sales`, `SG_HR`
 - **Users:** Provisioned test domain accounts (e.g., `jdoe`, `aaron`).
+
+![OU Structure](screenshots/Active_Directory_OUs.png)
+
+### 2. Group Policy Configurations
+| Policy Name | Target OU | Setting / Path | Functional Goal |
+| :--- | :--- | :--- | :--- |
+| **Default Domain Policy** | `lab.local` (Domain) | Account Lockout Threshold = 3 attempts | Mitigate brute-force attacks |
+| **GPO_Sales_Drive** | `Sales_OU` | User Config > Preferences > Drive Maps (`S:` -> `\\DC-01\Sales_Data`) | Auto-mount network share on login |
+| **GPO_Block_Control_Panel** | `Sales_OU` | User Config > Policies > Admin Templates > Control Panel | Restrict standard user system access |
+
+### 3. File Share & Permission Matrix
+Configured SMB folder sharing for department data access control:
+- **Share Location:** `\\DC-01\Sales_Data`
+- **Share Permissions:** `SG_Sales` - Full Control | `Everyone` - Removed
+- **NTFS Permissions:** `SG_Sales` - Modify Access
