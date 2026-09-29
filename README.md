@@ -40,16 +40,6 @@ Created a structured directory tree under `company_OUs` to segregate departments
 - **Security Groups:** `SG_IT`, `SG_Sales`, `SG_HR`
 - **Users:** Provisioned test domain accounts (e.g., `jdoe`, `aaron`).
 
----
-
-## Key Deployments & Configurations
-
-### 1. Active Directory OU & Security Group Structure
-Created a structured directory tree under `company_OUs` to segregate departments and apply targeted GPOs.
-- **OUs:** `IT_OU`, `Sales_OU`, `HR_OU`
-- **Security Groups:** `SG_IT`, `SG_Sales`, `SG_HR`
-- **Users:** Provisioned test domain accounts (e.g., `jdoe`, `aaron`).
-
 ![OU Structure](screenshots/Active_Directory_OUs.png)
 
 ### 2. Group Policy Configurations
